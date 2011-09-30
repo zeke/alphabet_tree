@@ -56,9 +56,11 @@ $(function() {
     }
 
   };
-  
 
   Stage.adaptToScale();
+  setTimeout('Stage.adaptToScale()', 400);
+  setTimeout('Stage.adaptToScale()', 800);
+  
   Node.fetchSummary();
 });
 
