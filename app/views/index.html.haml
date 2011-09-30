@@ -1,0 +1,45 @@
+%html
+
+  %head
+    %title
+    %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", :type => "text/javascript"}
+    %script{:src => "jquery.tmpl.js", :type => "text/javascript"}
+    %script{:src => "app.js", :type => "text/javascript"}
+    
+  %body
+    %ul#letters
+      %li#up
+      %li#for_the_homies
+      %li#a
+      %li#b
+      %li#c
+      %li#d
+      %li#e
+      %li#f
+      %li#g
+      %li#h
+      %li#i
+      %li#j
+      %li#k
+      %li#l
+      %li#m
+      %li#n
+      %li#o
+      %li#p
+      %li#q
+      %li#r
+      %li#s
+      %li#t
+      %li#u
+      %li#v
+      %li#w
+      %li#x
+      %li#y
+      %li#z
+      
+    %script#resultTemplate{:type => "text/x-jQuery-tmpl"}
+      <a href="#" onclick="Node.fetchSummary('${prefix}'); return false;">${prefix}</a>
+      <span class="count">${count}</span>
+    %script#upTemplate{:type => "text/x-jQuery-tmpl"}
+      <a href="#" onclick="Node.fetchSummary('${prefix}'); return false;">&uArr;</a>

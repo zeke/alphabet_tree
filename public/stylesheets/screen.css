@@ -1,0 +1,44 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+ul#letters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: both;
+}
+
+ul#letters li {
+  float: left;
+  clear: none;
+  display: table-cell;
+  text-align: center;
+}
+
+ul#letters li:nth-child(odd) {
+  background-color: #F0F0F0;
+}
+
+ul#letters li#up a {
+  color: #AAA;
+}
+
+
+ul#letters li a {
+  text-decoration: none;
+  color: black;
+  padding-top: 70px;
+  font-size: 1.8em;
+  font-weight: bold;
+  display: block;
+  clear: both;
+}
+ul#letters li span.count {
+  
+  color: #CCC;
+  font-size: .8em;
+}
